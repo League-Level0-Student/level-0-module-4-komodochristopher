@@ -1,12 +1,29 @@
+int x=0;
+int y=0;
+PImage waldo;
 void setup() {
-  PImage waldo = loadImage("puzzle_small.jpg"); // Change this to match your file name.
-  size(500, 500);
-  image(waldo, 0, 0);
-  doh = minim.loadSample("homer-doh.wav"); //drag and drop from project onto sketch
-  woohoo = minim.loadSample("homer-woohoo.wav"); //drag and drop from project onto sketch } 
+  
+  waldo =loadImage("waldo.jpg"); // Change this to match your file name.
+  size(1400, 880);
+  background(0,250,0);
+
+  doh = minim.loadSample("doh.mp3"); //drag and drop from project onto sketch
+  woohoo = minim.loadSample("wooho.mp3"); //drag and drop from project onto sketch } 
 }
 
 void draw() {
+  image(waldo,0,0,1400,880);
+ 
+  x=mouseX;
+  y=mouseY;
+  
+  ellipse(360,360,30,30);
+  
+  
+  
+  
+  
+  
       // Use this print statement to find out the coordinates of Waldo
       // println("X: " + mouseX + " Y: " + mouseY); 
 
