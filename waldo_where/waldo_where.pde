@@ -17,7 +17,14 @@ void draw() {
   x=mouseX;
   y=mouseY;
   
-  ellipse(360,360,30,30);
+println(  mouseX +" "+  mouseY );
+if(mousePressed) {
+if(mouseX== 795&&mouseY==321) {
+  
+}
+}
+
+
   
   
   
