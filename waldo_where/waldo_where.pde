@@ -19,11 +19,16 @@ void draw() {
   
 println(  mouseX +" "+  mouseY );
 if(mousePressed) {
-if(mouseX== 795&&mouseY==321) {
-  
-}
+if(mouseX== 798&&mouseY==331) {
+  System.out.println("waldo has been found!");
+   playWoohoo();
+}else{
+playDoh();  
 }
 
+
+  
+}
 
   
   
