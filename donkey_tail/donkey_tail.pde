@@ -54,7 +54,7 @@ void draw() {
   if (tailX>0) {
     image(tail, tailX, taily);
   } else {
-
+  }
     image(tail, mouseX-100, mouseY-30);
   }
   noStroke();
