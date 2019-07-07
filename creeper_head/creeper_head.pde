@@ -20,10 +20,13 @@ creeper.resize(1000,1000);
 void draw(){
  background(creeper);
   image(creeperhead,x,y);
-  if((dist(56,400,mouseX,mouseY)<40)){
+  if((dist(56,400,clickerX,clickerY)<40)){
+      System.out.println("you have found the creeper!!!");
   fill(#00FC12);
   }else{
-  fill(#FC004C);
+    fill(#FC004C);
+
+  }
   ellipse(clickerX,clickerY,4,4);
 
   if(mousePressed) {
@@ -41,7 +44,7 @@ if(clickerX>0){
  
   
   
-  }
+ 
   
   
   boolean isNear(int a, int b) {
